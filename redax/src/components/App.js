@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import shortid from 'shortid';
 import BudgetForm from './BudgetForm';
 import ExpenseForm from './ExpenseForm';
 import ExpensesTable from './ExpensesTable';
 import Values from './Value';
+import * as saveBudget from '../redax/Budget/budjetActions';
 
 const Container = styled.div`
   display: grid;
@@ -24,15 +26,15 @@ const calculateTotalExpenses = expenses => {
 
 const calculateBalance = (budget, expenses) => budget - expenses;
 
-export default class App extends Component {
+class App extends Component {
   state = {
-    budget: 0,
-    expenses: [],
+    // budget: 0,
+    // expenses: [],
   };
 
   saveBudget = value => {
     this.setState({ budget: value });
-  };
+  }
 
   addExpense = ({ name, amount }) => {
     const expense = {
@@ -69,3 +71,17 @@ export default class App extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  budget: 0,
+  expenses: [],
+})
+
+const mapDispatchToProps = dispatch => ({
+  saveBudget: budget => dispatch(saveBudget.saveBudget(12))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(BudgetForm);

@@ -4,6 +4,7 @@ import Label from './shared/Label';
 import Input from './shared/Input';
 import Button from './shared/Button';
 
+
 const labelStyles = `
   margin-bottom: 16px;
 `;
@@ -42,3 +43,9 @@ export default class BudgetForm extends Component {
     );
   }
 }
+
+
+// const mapStateToProps = state => ({
+//   budget: 0,
+// });
+
