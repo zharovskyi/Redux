@@ -45,5 +45,5 @@
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2"
   },
-  "homepage": "https://zharovskyi.github.io/Redux/redax"
+  "homepage": "https://zharovskyi.github.io/Redux/redax/build"
 }
