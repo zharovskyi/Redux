@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Form from './shared/Form';
 import Label from './shared/Label';
 import Input from './shared/Input';
 import Button from './shared/Button';
+import * as saveBudget from '../redux/Budget/budgetActions';
 
 
 const labelStyles = `
   margin-bottom: 16px;
-`;
-
-export default class BudgetForm extends Component {
+`
+class BudgetForm extends Component {
   state = { budget: 0 };
 
   handleChange = e => {
@@ -49,3 +50,13 @@ export default class BudgetForm extends Component {
 //   budget: 0,
 // });
 
+
+const mapDispatchToProps = dispatch => ({
+  handleSubmit: budget => dispatch(saveBudget.saveBudget(budget)),
+  handleChange: budget => dispatch(saveBudget.saveBudget(budget))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(BudgetForm);
