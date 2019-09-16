@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Redux/redax/build/static/css/main.951a195d.chunk.css",
+    "main.js": "/Redux/redax/build/static/js/main.bb836da5.chunk.js",
+    "main.js.map": "/Redux/redax/build/static/js/main.bb836da5.chunk.js.map",
+    "runtime~main.js": "/Redux/redax/build/static/js/runtime~main.89750d05.js",
+    "runtime~main.js.map": "/Redux/redax/build/static/js/runtime~main.89750d05.js.map",
+    "static/js/2.8d2a667c.chunk.js": "/Redux/redax/build/static/js/2.8d2a667c.chunk.js",
+    "static/js/2.8d2a667c.chunk.js.map": "/Redux/redax/build/static/js/2.8d2a667c.chunk.js.map",
+    "index.html": "/Redux/redax/build/index.html",
+    "precache-manifest.d5ab10ec53fc7cab0a646aefe87e9830.js": "/Redux/redax/build/precache-manifest.d5ab10ec53fc7cab0a646aefe87e9830.js",
+    "service-worker.js": "/Redux/redax/build/service-worker.js",
+    "static/css/main.951a195d.chunk.css.map": "/Redux/redax/build/static/css/main.951a195d.chunk.css.map"
+  }
+}
